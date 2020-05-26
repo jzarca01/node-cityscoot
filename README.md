@@ -1,4 +1,4 @@
-# node-bird
+# node-cityscoot
 
 An API for Cityscoot scooters
 
