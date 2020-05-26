@@ -2,7 +2,7 @@
 
 An API for Cityscoot scooters
 
-_Do you need a __paid license__ ? [https://jzarca01.github.io/contact](https://jzarca01.github.io/contact)
+Do you need a __paid license__ ? [https://jzarca01.github.io/contact](https://jzarca01.github.io/contact)
 
 ## Usage
 
@@ -21,13 +21,13 @@ For a cool example, see _example/index.js_
 ### Log in
 
 ```javascript
-city.login();
+await city.login();
 ```
 
 ### Get Scooters
 
 ```javascript
-city.getScooters(cityId);
+await city.getScooters(cityId);
 // Paris: 4
 // Nice: 6
 // Milan: 9
@@ -37,7 +37,7 @@ city.getScooters(cityId);
 ### Get Scooter by code
 
 ```javascript
-city.getScooter(cityId, scooterName);
+await city.getScooter(cityId, scooterName);
 // cityId: 4
 // scooterName: 5193
 ```
@@ -45,12 +45,12 @@ city.getScooter(cityId, scooterName);
 ### Create a reservation
 
 ```javascript
-city.createReservation(scooterId);
-scooterId can be fetched from getScooter
+await city.createReservation(scooterId);
+// scooterId can be fetched from getScooter
 ```
 
 ### Cancel a reservation
 
 ```javascript
-city.cancelReservation();
+await city.cancelReservation();
 ```
