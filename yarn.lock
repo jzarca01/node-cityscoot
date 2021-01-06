@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/code-frame@^7.5.5", "@babel/code-frame@^7.8.3":
+"@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
   integrity sha512-a9gxpmdXtZEInkCSHUJDLHZVBgb1QS0jhss4cPP93EW7s+uC5bikET2twEF3KV+7rDblJcmNvTR7VJejqd2C2g==
@@ -839,12 +839,12 @@ axios-middleware@^0.3.1:
   resolved "https://registry.yarnpkg.com/axios-middleware/-/axios-middleware-0.3.1.tgz#2dd29ee5a821b2499be887e256d60872eb715542"
   integrity sha512-DuPLxZgqBYnRgEhEUulNzPspf0j9jlH5iWOJHEfuLFfsxWLc7vjeOxR903dp+G+nrU3TYWbg2COLZ4PDUwh87g==
 
-axios@^0.19.2:
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
-  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
-    follow-redirects "1.5.10"
+    follow-redirects "^1.10.0"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -1006,11 +1006,6 @@ commander@4.0.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
   integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
 
-commander@^2.20.0:
-  version "2.20.3"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
-  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -1038,13 +1033,6 @@ dayjs@1.8.17:
   version "1.8.17"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.17.tgz#53ec413f2a7b02afbea1846d61bb260fa8567cea"
   integrity sha512-47VY/htqYqr9GHd7HW/h56PpQzRBSJcxIQFwqL3P20bMF/3az5c3PWdVY3LmPXFl6cQCYHL7c79b9ov+2bOBbw==
-
-debug@=3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  dependencies:
-    ms "2.0.0"
 
 debug@^4.1.0:
   version "4.1.1"
@@ -1166,12 +1154,10 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-follow-redirects@1.5.10:
-  version "1.5.10"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
-  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
-  dependencies:
-    debug "=3.1.0"
+follow-redirects@^1.10.0:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
+  integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -1305,14 +1291,6 @@ javascript-obfuscator@^0.18.1:
     string-template "1.0.0"
     tslib "1.10.0"
 
-jest-worker@^24.9.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-24.9.0.tgz#5dbfdb5b2d322e98567898238a9697bcce67b3e5"
-  integrity sha512-51PE4haMSXcHohnSMdM42anbvZANYTqMrr52tVKPqqsPJMzoP6FYYDVqahX/HrAoKEKz3uUPzSvKs9A3qR4iVw==
-  dependencies:
-    merge-stream "^2.0.0"
-    supports-color "^6.1.0"
-
 js-string-escape@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/js-string-escape/-/js-string-escape-1.0.1.tgz#e2625badbc0d67c7533e9edc1068c587ae4137ef"
@@ -1401,11 +1379,6 @@ md5@2.2.1:
     crypt "~0.0.1"
     is-buffer "~1.1.1"
 
-merge-stream@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
-  integrity sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
-
 mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
@@ -1434,11 +1407,6 @@ mkdirp@0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
-
-ms@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
-  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
 ms@^2.1.1:
   version "2.1.2"
@@ -1474,9 +1442,10 @@ node-releases@^1.1.53:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.56.tgz#bc054a417d316e3adac90eafb7e1932802f28705"
   integrity sha512-EVo605FhWLygH8a64TjgpjyHYOihkxECwX1bHHr8tETJKWEiWS2YJjPbvsX2jFjnjTNEgBCmk9mLjKG1Mf11cw==
 
-"nodejs-license-file@git+https://github.com/jzarca01/nodejs-license-file.git":
+"nodejs-license-file@https://github.com/jzarca01/nodejs-license-file.git":
   version "4.0.0"
-  resolved "git+https://github.com/jzarca01/nodejs-license-file.git#005a8f5ae4280ed223450f6eaf840df59194fb50"
+  uid "005a8f5ae4280ed223450f6eaf840df59194fb50"
+  resolved "https://github.com/jzarca01/nodejs-license-file.git#005a8f5ae4280ed223450f6eaf840df59194fb50"
   dependencies:
     dayjs "1.8.17"
     json-stable-stringify "1.0.1"
@@ -1732,18 +1701,7 @@ rollup-plugin-node-resolve@^5.2.0:
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-terser@^5.1.2:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-5.3.0.tgz#9c0dd33d5771df9630cd027d6a2559187f65885e"
-  integrity sha512-XGMJihTIO3eIBsVGq7jiNYOdDMb3pVxuzY0uhOE/FM4x/u9nQgr3+McsjzqBn3QfHIpNSZmFnpoKAwHBEcsT7g==
-  dependencies:
-    "@babel/code-frame" "^7.5.5"
-    jest-worker "^24.9.0"
-    rollup-pluginutils "^2.8.2"
-    serialize-javascript "^2.1.2"
-    terser "^4.6.2"
-
-rollup-pluginutils@^2.8.1, rollup-pluginutils@^2.8.2:
+rollup-pluginutils@^2.8.1:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.8.2.tgz#72f2af0748b592364dbd3389e600e5a9444a351e"
   integrity sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
@@ -1784,11 +1742,6 @@ semver@^5.5.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
-serialize-javascript@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.2.tgz#ecec53b0e0317bdc95ef76ab7074b7384785fa61"
-  integrity sha512-rs9OggEUF0V4jUSecXazOYsLfu7OGK2qIn3c7IPBiffz32XniEp/TX9Xmc9LQfK2nQ2QKHvZ2oygKUGU0lG4jQ==
-
 signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
@@ -1802,20 +1755,12 @@ source-map-support@0.5.16:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
-source-map-support@~0.5.12:
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
-  integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
-  dependencies:
-    buffer-from "^1.0.0"
-    source-map "^0.6.0"
-
 source-map@^0.5.0:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
-source-map@^0.6.0, source-map@~0.6.1:
+source-map@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
@@ -1871,28 +1816,12 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-supports-color@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-6.1.0.tgz#0764abc69c63d5ac842dd4867e8d025e880df8f3"
-  integrity sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==
-  dependencies:
-    has-flag "^3.0.0"
-
 supports-color@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.1.0.tgz#68e32591df73e25ad1c4b49108a2ec507962bfd1"
   integrity sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
   dependencies:
     has-flag "^4.0.0"
-
-terser@^4.6.2:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.7.0.tgz#15852cf1a08e3256a80428e865a2fa893ffba006"
-  integrity sha512-Lfb0RiZcjRDXCC3OSHJpEkxJ9Qeqs6mp2v4jf2MHfy8vGERmVDuvjXdd/EnP5Deme5F2yBRBymKmKHCBg2echw==
-  dependencies:
-    commander "^2.20.0"
-    source-map "~0.6.1"
-    source-map-support "~0.5.12"
 
 through@^2.3.6:
   version "2.3.8"
